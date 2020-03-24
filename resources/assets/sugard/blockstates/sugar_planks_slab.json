@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "half=bottom": { "model": "sugard:half_slab_sugar_planks" },
+        "half=top": { "model": "sugard:upper_slab_sugar_planks" }
+    }
+}

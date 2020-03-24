@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:sugar"
+        },
+        "title": {
+            "translate": "advancements.sugard.root.title"
+        },
+        "description": {
+            "translate": "advancements.sugard.root.description"
+        },
+        "background": "sugard:textures/blocks/sugar_stone.png",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "tick": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "sugard:blocks/sugar_pillar_top",
+        "side": "sugard:blocks/sugar_pillar"
+    }
+}
+

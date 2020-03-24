@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:sugar"
+        },
+        "title": {
+            "translate": "advancements.sugard.biome_sugar.title"
+        },
+        "description": {
+            "translate": "advancements.sugard.biome_sugar.description"
+        },
+    },
+    "parent": "sugard:root",
+    "criteria": {
+        "sugar_desert": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "sugard:sugar_desert"
+                          }
+            }
+      }
+}

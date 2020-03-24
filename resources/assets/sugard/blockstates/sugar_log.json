@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "axis=y": { "model": "sugard:sugar_log_top" },
+        "axis=z": { "model": "sugard:sugar_log_top", "x": 90 },
+        "axis=x": { "model": "sugard:sugar_log_top", "x": 90, "y": 90 }
+    }
+}
+

@@ -1,0 +1,26 @@
+﻿# EN_us
+
+item.bismuth_crystal.name=bismuth_crystal
+item.bismuth_liquid.name=bismuth_liquid
+item.bismuth_pickaxe.name=bismuth_pickaxe
+
+tile.bismuth_ore.name=bismuth_ore
+tile.bismuth_crystal_block.name=bismuth_crystal_block
+tile.sugar_block.name=sugar_block
+tile.sugar_stone.name=sugar_stone
+tile.sugar_pillar.name=sugar_pillar
+tile.sugar_log.name=sugar_log
+tile.sugar_planks.name=sugar_planks
+tile.sugar_planks_slab.name=sugar_planks_slab
+tile.sugar_slab.name=sugar_slab
+tile.sugar_torch.name=sugar_torch
+tile.sugar_candy.name=sugar_candy
+
+advancements.sugard.root.title=SugarDesertMod
+advancements.sugard.root.description=Install sugarD
+advancements.sugard.get_sugar.title=sugar hunter
+advancements.sugard.get_sugar.description=get sugar_stone
+advancements.sugard.biome_sugar.title=Mass generation sugar!
+advancements.sugard.biome_sugar.description=Mass generation sugar!
+
+itemGroup.SugarD_tabs=SugarD

@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "sugard:items/bismuth_crystal"
+  }
+}

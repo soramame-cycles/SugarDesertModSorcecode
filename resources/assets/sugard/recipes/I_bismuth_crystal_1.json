@@ -1,0 +1,11 @@
+{
+	"type":"minecraft:crafting_shapeless",
+	"group":"sugard:bismuth_crystal",
+
+	"ingredients":[
+	{"item":"sugard:bismuth_liquid","date":0}
+	],
+
+	"result":{"item":"sugard:bismuth_crystal","date":0,"count": 1}
+
+}

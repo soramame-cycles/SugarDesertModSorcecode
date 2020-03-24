@@ -1,0 +1,26 @@
+﻿# JA_jp
+
+item.bismuth_crystal.name=ビスマス骸晶
+item.bismuth_liquid.name=融解したビスマス
+item.bismuth_pickaxe.name=ビスマスピッケル
+
+tile.bismuth_ore.name=ビスマス鉱石
+tile.bismuth_crystal_block.name=ビスマス骸晶ブロック
+tile.sugar_block.name="砂"糖
+tile.sugar_stone.name=砂糖石
+tile.sugar_pillar.name=砂糖の柱
+tile.sugar_log.name=砂糖の木
+tile.sugar_planks.name=砂糖の木材
+tile.sugar_planks_slab.name=砂糖木のハーフ
+tile.sugar_slab.name=砂糖石のハーフ
+tile.sugar_torch.name=お砂糖ーチ
+tile.sugar_candy.name=氷砂糖
+
+advancements.sugard.root.title=SugarDesertMod
+advancements.sugard.root.description=sugarDをインストールする
+advancements.sugard.get_sugar.title="砂"糖を手に入れる
+advancements.sugard.get_sugar.description="砂"糖を手に入れる
+advancements.sugard.biome_sugar.title=お砂糖警報！
+advancements.sugard.biome_sugar.description=お砂糖砂漠バイオームに訪れる
+
+itemGroup.SugarD_tabs=SugarD

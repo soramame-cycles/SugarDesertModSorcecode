@@ -1,0 +1,9 @@
+{
+	"type":"minecraft:crafting_shapeless",
+
+	"ingredients":[
+	{"item":"sugard:sugar_block","date":0}
+	],
+	"result":{"item":"minecraft:sugar","date":0,"count": 4}
+
+}

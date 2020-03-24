@@ -1,0 +1,16 @@
+{
+	"type":"minecraft:crafting_shaped",
+	"group":"sugard:sugar_block",
+
+	"pattern":[
+	"XX",
+	"XX"
+	],
+
+	"key":{
+		"X":{"item":"minecraft:sugar","date":0}
+	},
+
+	"result":{"item":"sugard:sugar_block","date":0,"count": 1}
+
+}

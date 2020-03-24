@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:sugar"
+        },
+        "title": {
+            "translate": "advancements.sugard.get_sugar.title"
+        },
+        "description": {
+            "translate": "advancements.sugard.get_sugar.description"
+        },
+    },
+    "parent": "sugard:root",
+    "criteria": {
+        "get_sugar": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "sugard:sugar_block"
+                    }
+                ]
+            }
+        }
+    }
+}
