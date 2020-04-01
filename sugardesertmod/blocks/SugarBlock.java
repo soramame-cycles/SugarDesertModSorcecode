@@ -1,9 +1,10 @@
 package com.sugar.sugardesertmod.blocks;
 
+import com.sugar.sugardesertmod.SugarDesertMod;
+
 import net.minecraft.block.BlockFalling;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 
 public class SugarBlock extends BlockFalling {
 
@@ -13,7 +14,7 @@ public class SugarBlock extends BlockFalling {
 		this.setResistance(0.5F);
 		this.setHarvestLevel("shovel", 0);
 		this.setRegistryName("sugar_block");
-		this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+		this.setCreativeTab(SugarDesertMod.Tab_sugard);
 		this.setUnlocalizedName("sugar_block");
 		this.setSoundType(SoundType.SAND);
 	}

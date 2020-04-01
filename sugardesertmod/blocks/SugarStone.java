@@ -1,8 +1,9 @@
 package com.sugar.sugardesertmod.blocks;
 
+import com.sugar.sugardesertmod.SugarDesertMod;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 
 public class SugarStone extends Block {
 
@@ -12,7 +13,7 @@ public class SugarStone extends Block {
 		this.setResistance(2.0F);
 		this.setHarvestLevel("pickaxe", 1);
 		this.setRegistryName("sugar_stone");
-		this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+		this.setCreativeTab(SugarDesertMod.Tab_sugard);
 		this.setUnlocalizedName("sugar_stone");
 }
 

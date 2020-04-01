@@ -16,6 +16,17 @@ public class SugarDBlock {
 	public static Block Sugar_block;
 	public static Block Sugar_stone;
 	public static Block Sugar_pillar;
+	public static Block Sugar_log;
+	public static Block Sugar_planks;
+	public static Block Sugar_planks_slab;
+	public static Block Sugar_slab;
+	public static Block Sugar_torch;
+	public static Block Sugar_candy;
+	public static Block Sugar_fence;
+	public static Block Sugar_diamond_ore;
+	public static Block Sugar_diamond_block;
+	public static Block Rotten_flesh_block;
+	//public static Block Sugar_door;
 
 	public static void Bismuth_Ore(RegistryEvent.Register<Item> event) {
 
@@ -87,5 +98,144 @@ public class SugarDBlock {
 		ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(Sugar_pillar), 0,
 				new ModelResourceLocation("sugard:sugar_pillar"));
 	}
+	//区切り
+	public static void Sugar_log(RegistryEvent.Register<Item> event) {
 
+		Sugar_log = new SugarLog();
+
+		event.getRegistry().register(new ItemBlock(Sugar_log).setRegistryName("sugar_log"));
+		ForgeRegistries.BLOCKS.register(Sugar_log);
+	}
+
+	public static void Sugar_logModel(ModelRegistryEvent event) {
+
+		ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(Sugar_log), 0,
+				new ModelResourceLocation("sugard:sugar_log"));
+	}
+	//区切り
+	public static void Sugar_planks(RegistryEvent.Register<Item> event) {
+
+		Sugar_planks = new SugarPlanks();
+
+		event.getRegistry().register(new ItemBlock(Sugar_planks).setRegistryName("sugar_planks"));
+		ForgeRegistries.BLOCKS.register(Sugar_planks);
+	}
+
+	public static void Sugar_planksModel(ModelRegistryEvent event) {
+
+		ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(Sugar_planks), 0,
+				new ModelResourceLocation("sugard:sugar_planks"));
+	}
+	//区切り
+	public static void Sugar_planks_slab(RegistryEvent.Register<Item> event) {
+
+		Sugar_planks_slab = new SugarPlanks_slab();
+
+		event.getRegistry().register(new ItemBlock(Sugar_planks_slab).setRegistryName("sugar_planks_slab"));
+		ForgeRegistries.BLOCKS.register(Sugar_planks_slab);
+	}
+
+	public static void Sugar_planks_slabModel(ModelRegistryEvent event) {
+
+		ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(Sugar_planks_slab), 0,
+				new ModelResourceLocation("sugard:sugar_planks_slab"));
+	}
+	//区切り
+	public static void Sugar_slab(RegistryEvent.Register<Item> event) {
+
+		Sugar_slab = new Sugar_slab();
+
+		event.getRegistry().register(new ItemBlock(Sugar_slab).setRegistryName("sugar_slab"));
+		ForgeRegistries.BLOCKS.register(Sugar_slab);
+	}
+
+	public static void Sugar_slabModel(ModelRegistryEvent event) {
+
+		ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(Sugar_slab), 0,
+				new ModelResourceLocation("sugard:sugar_slab"));
+	}
+	//区切り
+	public static void Sugar_torch(RegistryEvent.Register<Item> event) {
+
+		Sugar_torch = new SugarTorch();
+
+		event.getRegistry().register(new ItemBlock(Sugar_torch).setRegistryName("sugar_torch"));
+		ForgeRegistries.BLOCKS.register(Sugar_torch);
+	}
+
+	public static void Sugar_torchModel(ModelRegistryEvent event) {
+
+		ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(Sugar_torch), 0,
+				new ModelResourceLocation("sugard:sugar_torch"));
+	}
+	//区切り
+	public static void Sugar_candy(RegistryEvent.Register<Item> event) {
+
+		Sugar_candy = new SugarCandy();
+
+		event.getRegistry().register(new ItemBlock(Sugar_candy).setRegistryName("sugar_candy"));
+		ForgeRegistries.BLOCKS.register(Sugar_candy);
+	}
+
+	public static void Sugar_candyModel(ModelRegistryEvent event) {
+
+		ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(Sugar_candy), 0,
+				new ModelResourceLocation("sugard:sugar_candy"));
+	}
+	//
+	public static void Sugar_fence(RegistryEvent.Register<Item> event) {
+
+		Sugar_fence = new SugarFence();
+
+		event.getRegistry().register(new ItemBlock(Sugar_fence).setRegistryName("sugar_fence"));
+		ForgeRegistries.BLOCKS.register(Sugar_fence);
+	}
+
+	public static void Sugar_fenceModel(ModelRegistryEvent event) {
+
+		ModelLoader.setCustomModelResourceLocation(ItemBlock.getItemFromBlock(Sugar_fence), 0,
+				new ModelResourceLocation("sugard:sugar_fence"));
+	}
+	//
+	public static void Sugar_diamond_ore(RegistryEvent.Register<Item> event) {
+
+		Sugar_diamond_ore = new SugarDiamondOre();
+
+		event.getRegistry().register(new ItemBlock(Sugar_diamond_ore).setRegistryName("sugar_diamond_ore"));
+		ForgeRegistries.BLOCKS.register(Sugar_diamond_ore);
+	}
+
+	public static void Sugar_diamond_oreModel(ModelRegistryEvent event) {
+
+		ModelLoader.setCustomModelResourceLocation(ItemBlock.getItemFromBlock(Sugar_diamond_ore), 0,
+				new ModelResourceLocation("sugard:sugar_diamond_ore"));
+	}
+	//
+	public static void Sugar_diamond_block(RegistryEvent.Register<Item> event) {
+
+		Sugar_diamond_block = new SugarDiamondBlock();
+
+		event.getRegistry().register(new ItemBlock(Sugar_diamond_block).setRegistryName("sugar_diamond_block"));
+		ForgeRegistries.BLOCKS.register(Sugar_diamond_block);
+	}
+
+	public static void Sugar_diamond_blockModel(ModelRegistryEvent event) {
+
+		ModelLoader.setCustomModelResourceLocation(ItemBlock.getItemFromBlock(Sugar_diamond_block), 0,
+				new ModelResourceLocation("sugard:sugar_diamond_block"));
+	}
+	//
+	public static void Rotten_flesh_block(RegistryEvent.Register<Item> event) {
+
+		Rotten_flesh_block = new RottenFleshBlock();
+
+		event.getRegistry().register(new ItemBlock(Rotten_flesh_block).setRegistryName("rotten_flesh_block"));
+		ForgeRegistries.BLOCKS.register(Rotten_flesh_block);
+	}
+
+	public static void Rotten_flesh_blockModel(ModelRegistryEvent event) {
+
+		ModelLoader.setCustomModelResourceLocation(ItemBlock.getItemFromBlock(Rotten_flesh_block), 0,
+				new ModelResourceLocation("sugard:rotten_flesh_block"));
+	}
 }

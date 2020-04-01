@@ -3,25 +3,25 @@ package com.sugar.sugardesertmod.blocks;
 import com.sugar.sugardesertmod.SugarDesertMod;
 
 import net.minecraft.block.BlockRotatedPillar;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyEnum;
 import net.minecraft.util.EnumFacing;
 
-public class SugarPillar extends BlockRotatedPillar {
+public class SugarLog extends BlockRotatedPillar {
 
 	public static final PropertyEnum<EnumFacing.Axis> AXIS = PropertyEnum.<EnumFacing.Axis>create("axis", EnumFacing.Axis.class);
-
-	public SugarPillar() {
-		super(Material.ROCK);
-		this.setHardness(2.0F);
-		this.setResistance(2.0F);
-		this.setHarvestLevel("pickaxe", 1);
-		this.setRegistryName("sugar_pillar");
+	public SugarLog() {
+		super(Material.WOOD);
+		this.setHardness(0.5F);
+		this.setResistance(0.5F);
+		this.setHarvestLevel("axe", 0);
+		this.setRegistryName("sugar_log");
+		this.setUnlocalizedName("sugar_log");
 		this.setCreativeTab(SugarDesertMod.Tab_sugard);
-		this.setUnlocalizedName("sugar_pillar");
+		this.setSoundType(SoundType.WOOD);
 	}
-
-	public SugarPillar(Material materialIn) {
+	public SugarLog(Material materialIn) {
 	super(materialIn);
 	}
 }

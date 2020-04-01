@@ -1,8 +1,9 @@
 package com.sugar.sugardesertmod.blocks;
 
+import com.sugar.sugardesertmod.SugarDesertMod;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 
 public class BlockBismuthOre extends Block {
 
@@ -12,7 +13,7 @@ public class BlockBismuthOre extends Block {
 		this.setResistance(10.0F);
 		this.setHarvestLevel("pickaxe", 2);
 		this.setRegistryName("bismuth_ore");
-		this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+		this.setCreativeTab(SugarDesertMod.Tab_sugard);
 		this.setUnlocalizedName("bismuth_ore");
 	}
 
