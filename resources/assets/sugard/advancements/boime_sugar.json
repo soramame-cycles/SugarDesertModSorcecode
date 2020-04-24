@@ -8,9 +8,9 @@
         },
         "description": {
             "translate": "advancements.sugard.biome_sugar.description"
+        }
         },
-    },
-    "parent": "sugard:root",
+        "parent": "sugard:root",
     "criteria": {
         "sugar_desert": {
             "trigger": "minecraft:location",

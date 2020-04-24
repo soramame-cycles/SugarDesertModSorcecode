@@ -1,23 +1,23 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:sugar"
+            "item": "minecraft:rotten_flesh"
         },
         "title": {
-            "translate": "advancements.sugard.get_sugar.title"
+            "translate": "advancements.sugard.rotten_flesh.title"
         },
         "description": {
-            "translate": "advancements.sugard.get_sugar.description"
+            "translate": "advancements.sugard.rotten_flesh.description"
         }
     },
     "parent": "sugard:root",
     "criteria": {
-        "get_sugars": {
+        "get_rotten_flesh": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items":[
                     {
-                        "item": "sugard:sugar_block"
+                        "item": "sugard:rotten_flesh_block"
                     }
 ]
             }
