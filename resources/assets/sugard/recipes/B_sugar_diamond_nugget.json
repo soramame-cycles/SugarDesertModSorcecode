@@ -1,0 +1,16 @@
+{
+	"type":"minecraft:crafting_shaped",
+	"group":"sugard:sugar_dia",
+
+	"pattern":[
+	"XX",
+	"XX"
+	],
+
+	"key":{
+		"X":{"item":"sugard:sugar_diamond_nugget","date":0}
+	},
+
+	"result":{"item":"sugard:sugar_diamond","date":0,"count": 1}
+
+}

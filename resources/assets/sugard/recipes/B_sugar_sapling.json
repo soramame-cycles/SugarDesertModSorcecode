@@ -1,0 +1,17 @@
+{
+	"type":"minecraft:crafting_shaped",
+
+	"pattern":[
+	"XXX",
+	"XYX",
+	"XXX"
+	],
+
+	"key":{
+		"X":{"item":"minecraft:stick","date":0},
+		"Y":{"item":"minecraft:sugar","date":0}
+	},
+
+	"result":{"item":"sugard:sugar_sapling","date":0,"count": 1}
+
+}

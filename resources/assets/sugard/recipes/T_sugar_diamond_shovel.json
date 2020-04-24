@@ -1,0 +1,17 @@
+{
+	"type":"minecraft:crafting_shaped",
+
+	"pattern":[
+	" X ",
+	" Y ",
+	" Y "
+	],
+
+	"key":{
+		"X":{"item":"sugard:sugar_diamond","date":0},
+		"Y":{"item":"minecraft:stick","date":0}
+	},
+
+	"result":{"item":"sugard:sugar_diamond_shovel","date":0,"count": 1}
+
+}

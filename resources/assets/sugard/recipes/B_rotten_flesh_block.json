@@ -1,0 +1,16 @@
+{
+	"type":"minecraft:crafting_shaped",
+
+	"pattern":[
+	"XXX",
+	"XXX",
+	"XXX"
+	],
+
+	"key":{
+		"X":{"item":"minecraft:rotten_flesh","date":0}
+	},
+
+	"result":{"item":"sugard:rotten_flesh_block","date":0,"count": 1}
+
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":[
+    " X ",
+    "ZYZ",
+    " Z "
+  ],
+  "key":{
+    "Z":{"item":"minecraft:wheat","date":0},
+    "X":{"item":"sugard:poppy_seed","date":0},
+    "Y":{"item":"sugard:azuki_paste","date":0}
+  },
+  "result":{"item":"sugard:azuki_been_bun","date":0,"count": 1}
+}

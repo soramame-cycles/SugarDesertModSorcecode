@@ -1,0 +1,15 @@
+{
+	"type":"minecraft:crafting_shaped",
+
+	"pattern":[
+	"XXX",
+	"XXX"
+	],
+
+	"key":{
+		"X":{"item":"sugard:sugar_stone","date":0}
+	},
+
+	"result":{"item":"sugard:sugar_stone_wall","date":0,"count": 6}
+
+}
