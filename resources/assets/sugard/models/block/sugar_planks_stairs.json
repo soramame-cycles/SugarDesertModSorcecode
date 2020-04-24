@@ -1,0 +1,8 @@
+{
+    "parent": "block/stairs",
+    "textures": {
+        "bottom": "sugard:blocks/sugar_planks",
+        "top": "sugard:blocks/sugar_planks",
+        "side": "sugard:blocks/sugar_planks"
+    }
+}
