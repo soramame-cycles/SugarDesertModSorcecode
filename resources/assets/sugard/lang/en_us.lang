@@ -3,6 +3,17 @@
 item.bismuth_crystal.name=bismuth_crystal
 item.bismuth_liquid.name=bismuth_liquid
 item.bismuth_pickaxe.name=bismuth_pickaxe
+item.sugar_diamond.name=sugardiamond
+item.sugar_diamond_axe.name=sugar_diamond_axe
+item.sugar_diamond_hoe.name=sugar_diamond_hoe
+item.sugar_diamond_pickaxe.name=sugar_diamond_pickaxe
+item.sugar_diamond_shovel.name=sugar_diamond_shovel
+item.sugar_diamond_sword.name=sugar_diamond_sword
+item.sugar_diamond_nugget.name=sugar_diamond_nugget
+item.azuki_been.name=azuki_been
+item.azuki_paste.name=azuki_paste
+item.azuki_been_bun.name=azuki_been_bun
+item.poppy_seed.name=poppy_seed
 
 tile.bismuth_ore.name=bismuth_ore
 tile.bismuth_crystal_block.name=bismuth_crystal_block
@@ -15,12 +26,26 @@ tile.sugar_planks_slab.name=sugar_planks_slab
 tile.sugar_slab.name=sugar_slab
 tile.sugar_torch.name=sugar_torch
 tile.sugar_candy.name=sugar_candy
+tile.sugar_fence.name=sugar_fence
+tile.sugar_diamond_ore.name=sugar_diamond_ore
+tile.sugar_diamond_block.name=sugar_diamond_block
+tile.rotten_flesh_block.name=rotten_flesh_block
+tile.sugar_cobblestone.name=sugar_cobblestone
+tile.sugarrack.name=sugarrack
+tile.end_sugar_stone.name=end_sugar_stone
+tile.sugar_stone_stairs.name=sugar_stone_stairs
+tile.sugar_planks_stairs.name=sugar_planks_stairs
+tile.sugar_stone_wall.name=sugar_stone_wall
+tile.sugar_leaves.name=sugar_leaves
+tile.sugar_sapling.name=sugar_sapling
 
 advancements.sugard.root.title=SugarDesertMod
 advancements.sugard.root.description=Install sugarD
 advancements.sugard.get_sugar.title=sugar hunter
 advancements.sugard.get_sugar.description=get sugar_stone
 advancements.sugard.biome_sugar.title=Mass generation sugar!
-advancements.sugard.biome_sugar.description=Mass generation sugar!
+advancements.sugard.biome_sugar.description=visit sugar_desert!
+advancements.sugard.rotten_flesh.title=this is rotten
+advancements.sugard.rotten_flesh.description=get rotten_flesh_block
 
 itemGroup.SugarD_tabs=SugarD

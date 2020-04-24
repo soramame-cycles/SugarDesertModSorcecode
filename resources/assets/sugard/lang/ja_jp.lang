@@ -3,6 +3,17 @@
 item.bismuth_crystal.name=ビスマス骸晶
 item.bismuth_liquid.name=融解したビスマス
 item.bismuth_pickaxe.name=ビスマスピッケル
+item.sugar_diamond.name=砂糖ダイヤ
+item.sugar_diamond_axe.name=砂糖ダイヤのオノ
+item.sugar_diamond_hoe.name=砂糖ダイヤのクワ
+item.sugar_diamond_pickaxe.name=砂糖ダイヤのツルハシ
+item.sugar_diamond_shovel.name=砂糖ダイヤのシャベル
+item.sugar_diamond_sword.name=砂糖ダイヤの剣
+item.sugar_diamond_nugget.name=砂糖ダイヤの欠片
+item.azuki_been.name=小豆
+item.azuki_paste.name=あんこ
+item.azuki_been_bun.name=アンパン
+item.poppy_seed.name=ポピーシード
 
 tile.bismuth_ore.name=ビスマス鉱石
 tile.bismuth_crystal_block.name=ビスマス骸晶ブロック
@@ -15,6 +26,19 @@ tile.sugar_planks_slab.name=砂糖木のハーフ
 tile.sugar_slab.name=砂糖石のハーフ
 tile.sugar_torch.name=お砂糖ーチ
 tile.sugar_candy.name=氷砂糖
+tile.sugar_fence.name=砂糖のフェンス
+tile.sugar_diamond_ore.name=砂糖ダイヤ鉱石
+tile.sugar_diamond_block.name=砂糖ダイヤブロック
+tile.rotten_flesh_block.name=腐肉ブロック
+tile.sugar_cobblestone.name=砂糖の丸石
+tile.sugarrack.name=シュガーラック
+tile.end_sugar_stone.name=エンド砂糖石
+tile.sugar_stone_stairs.name=砂糖石の階段
+tile.sugar_planks_stairs.name=砂糖木の階段
+tile.sugar_stone_wall.name=砂糖石の壁
+tile.sugar_leaves.name=砂糖の葉
+tile.sugar_sapling.name=砂糖木の苗木
+
 
 advancements.sugard.root.title=SugarDesertMod
 advancements.sugard.root.description=sugarDをインストールする
@@ -22,5 +46,7 @@ advancements.sugard.get_sugar.title="砂"糖を手に入れる
 advancements.sugard.get_sugar.description="砂"糖を手に入れる
 advancements.sugard.biome_sugar.title=お砂糖警報！
 advancements.sugard.biome_sugar.description=お砂糖砂漠バイオームに訪れる
+advancements.sugard.rotten_flesh.title=それ、腐ってね？
+advancements.sugard.rotten_flesh.description=腐肉ブロックを手に入れる
 
 itemGroup.SugarD_tabs=SugarD
