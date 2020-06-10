@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "sugard:azuki_been_bun"
+        },
+        "title": {
+            "translate": "advancements.sugard.get_azuki_been_bun.title"
+        },
+        "description": {
+            "translate": "advancements.sugard.get_azuki_been_bun.description"
+        }
+    },
+    "parent": "sugard:get_sugar",
+    "criteria": {
+        "get_sugars": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items":[
+                    {
+                        "item": "sugard:azuki_been_bun"
+                    }
+]
+            }
+        }
+    }
+
+}
