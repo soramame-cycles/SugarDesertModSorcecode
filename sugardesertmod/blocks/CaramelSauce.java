@@ -13,22 +13,23 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class SugarCandy extends Block {
+public class CaramelSauce extends Block {
 
-	public SugarCandy() {
-		super(Material.GLASS);
-		this.setHardness(0.5F);
-		this.setResistance(0.5F);
-		this.setHarvestLevel("pickaxe", 0);
-		this.setRegistryName("sugar_candy");
-		this.setUnlocalizedName("sugar_candy");
+	public CaramelSauce() {
+		super(Material.GROUND);
+		this.setHardness(2.0F);
+		this.setResistance(2.0F);
+		this.setHarvestLevel("shovel", 0);
+		this.setRegistryName("caramel_sauce");
+		this.setUnlocalizedName("caramel_sauce");
 		this.setCreativeTab(SugarDesertMod.Tab_sugard);
-		this.setSoundType(SoundType.GLASS);
+		this.setSoundType(SoundType.SLIME);
 
 	}
 
-	public SugarCandy(Material materialIn) {
+	public CaramelSauce(Material materialIn) {
 		super(materialIn);
+
 	}
 
 	@SideOnly(Side.CLIENT)
@@ -39,11 +40,6 @@ public class SugarCandy extends Block {
     }
 	@Override
 	public boolean isOpaqueCube(IBlockState state) {
-		return false;
-	}
-
-	@Override
-    public boolean isFullCube(IBlockState state) {
 		return false;
 	}
 
