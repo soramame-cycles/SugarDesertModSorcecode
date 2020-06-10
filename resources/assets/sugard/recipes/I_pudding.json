@@ -1,0 +1,11 @@
+{
+	"type":"minecraft:crafting_shapeless",
+
+	"ingredients":[
+		{"item":"sugard:caramel_sauce","date":0},
+		{"item":"sugard:pudding_block","date":0}
+	],
+
+	"result":{"item":"sugard:pudding","date":0,"count": 2}
+
+}

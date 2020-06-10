@@ -2,8 +2,7 @@
 	"type":"minecraft:crafting_shaped",
 
 	"pattern":[
-	"X  ",
-	"XX ",
+	"XXX",
 	"XXX"
 	],
 
@@ -11,6 +10,6 @@
 		"X":{"item":"sugard:sugar_planks","date":0}
 	},
 
-	"result":{"item":"sugard:sugar_planks_stairs","date":0,"count": 4}
+	"result":{"item":"sugard:sugar_trapdoor","date":0,"count": 2}
 
 }

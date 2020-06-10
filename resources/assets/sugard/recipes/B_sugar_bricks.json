@@ -1,0 +1,15 @@
+{
+	"type":"minecraft:crafting_shaped",
+
+	"pattern":[
+	"X",
+	"X"
+	],
+
+	"key":{
+		"X":{"item":"sugard:sugar_slab","date":0}
+	},
+
+	"result":{"item":"sugard:sugar_bricks","date":0,"count": 1}
+
+}

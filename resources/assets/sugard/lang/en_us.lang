@@ -14,6 +14,7 @@ item.azuki_been.name=azuki_been
 item.azuki_paste.name=azuki_paste
 item.azuki_been_bun.name=azuki_been_bun
 item.poppy_seed.name=poppy_seed
+item.pudding.name=pudding
 
 tile.bismuth_ore.name=bismuth_ore
 tile.bismuth_crystal_block.name=bismuth_crystal_block
@@ -38,6 +39,15 @@ tile.sugar_planks_stairs.name=sugar_planks_stairs
 tile.sugar_stone_wall.name=sugar_stone_wall
 tile.sugar_leaves.name=sugar_leaves
 tile.sugar_sapling.name=sugar_sapling
+tile.sugar_trapdoor.name=sugar_trapdoor
+tile.sugar_bricks.name=sugar_bricks
+tile.sugar_pane.name=sugar_candy_pane
+tile.caramel_sauce.name=caramel_sauce
+tile.pudding_block.name=pudding_block
+tile.sugar_bricks_slab.name=sugar_bricks_slab
+tile.sugar_bricks_stairs.name=sugar_bricks_stairs
+tile.sugar_cob_slab.name=sugar_cob_slab
+tile.sugar_cob_stairs.name=sugar_cob_stairs
 
 advancements.sugard.root.title=SugarDesertMod
 advancements.sugard.root.description=Install sugarD
@@ -47,5 +57,7 @@ advancements.sugard.biome_sugar.title=Mass generation sugar!
 advancements.sugard.biome_sugar.description=visit sugar_desert!
 advancements.sugard.rotten_flesh.title=this is rotten
 advancements.sugard.rotten_flesh.description=get rotten_flesh_block
+advancements.sugard.get_azuki_been_bun.title=energy100times!
+advancements.sugard.get_azuki_been_bun.description=get azuki_been_bun
 
 itemGroup.SugarD_tabs=SugarD

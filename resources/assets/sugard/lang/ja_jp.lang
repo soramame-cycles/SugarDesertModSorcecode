@@ -14,6 +14,7 @@ item.azuki_been.name=小豆
 item.azuki_paste.name=あんこ
 item.azuki_been_bun.name=アンパン
 item.poppy_seed.name=ポピーシード
+item.pudding.name=プリン
 
 tile.bismuth_ore.name=ビスマス鉱石
 tile.bismuth_crystal_block.name=ビスマス骸晶ブロック
@@ -38,7 +39,15 @@ tile.sugar_planks_stairs.name=砂糖木の階段
 tile.sugar_stone_wall.name=砂糖石の壁
 tile.sugar_leaves.name=砂糖の葉
 tile.sugar_sapling.name=砂糖木の苗木
-
+tile.sugar_trapdoor.name=砂糖のトラップドア
+tile.sugar_bricks.name=砂糖レンガ
+tile.sugar_pane.name=氷砂糖のステンドグラス
+tile.caramel_sauce.name=カラメルソースブロック
+tile.pudding_block.name=プリンブロック
+tile.sugar_bricks_slab.name=砂糖レンガのハーフ
+tile.sugar_bricks_stairs.name=砂糖レンガの階段
+tile.sugar_cob_slab.name=砂糖丸石のハーフ
+tile.sugar_cob_stairs.name=砂糖丸石の階段
 
 advancements.sugard.root.title=SugarDesertMod
 advancements.sugard.root.description=sugarDをインストールする
@@ -48,5 +57,7 @@ advancements.sugard.biome_sugar.title=お砂糖警報！
 advancements.sugard.biome_sugar.description=お砂糖砂漠バイオームに訪れる
 advancements.sugard.rotten_flesh.title=それ、腐ってね？
 advancements.sugard.rotten_flesh.description=腐肉ブロックを手に入れる
+advancements.sugard.get_azuki_been_bun.title=元気100倍!アンp…おっと誰か来たようだ…
+advancements.sugard.get_azuki_been_bun.description=あんパンを手に入れる
 
 itemGroup.SugarD_tabs=SugarD
