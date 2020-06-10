@@ -42,9 +42,9 @@ public class SugarBlockGen implements IWorldGenerator {
 	}
 	private void runGenerator(WorldGenerator gen,World world,Random rand,int chunkX,int chunkZ,int chance,Block taget) {;
 		for (int i=0; i<10; i++) {
-			int x = chunkX * 16 + 8 + rand.nextInt(16);
+			int x = chunkX * 16 + rand.nextInt(16);
 			int y = rand.nextInt(120) + 10;
-			int z = chunkZ * 16 +8 + rand.nextInt(16);
+			int z = chunkZ * 16 + rand.nextInt(16);
 			gen.generate(world, rand, new BlockPos(x, y+1, z));
 
 		}

@@ -19,7 +19,7 @@ public class SugarDiaOreGen implements IWorldGenerator{
 	private WorldGenerator sugar_diamond_ore;
 
 	public SugarDiaOreGen() {
-		sugar_diamond_ore = new WorldGenMinable(SugarDBlock.Sugar_diamond_ore.getDefaultState(),8);
+		sugar_diamond_ore = new WorldGenMinable(SugarDBlock.Sugar_diamond_ore.getDefaultState(),9);
 	}
 
 	@Override
@@ -43,9 +43,9 @@ public class SugarDiaOreGen implements IWorldGenerator{
 	private void runGenerator(WorldGenerator gen,World world, Random rand,int chunkX,int chunkZ,int chance,Block taget) {;
 
 		for (int i = 0; i < 10; i++) {
-			int x = chunkX * 16 + 8 + rand.nextInt(16);
+			int x = chunkX * 16 + rand.nextInt(16);
 			int y = 1 + rand.nextInt(15);
-			int z = chunkZ * 16 +8 + rand.nextInt(16);
+			int z = chunkZ * 16 + rand.nextInt(16);
 			gen.generate(world, rand, new BlockPos(x, y+1, z));
 		}
 	}

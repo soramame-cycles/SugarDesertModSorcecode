@@ -47,9 +47,9 @@ public class BismuthOreGen implements IWorldGenerator {
 	//(生成マン,世界に,ランダムに,チャンクのX軸,チャンクのZ軸,生成チャンス,どのブロックと置き換えるか)
 
 		for (int i = 0; i < 10; i++) {
-			int x = chunkX * 16 + 8 + rand.nextInt(16);
+			int x = chunkX * 16 + rand.nextInt(16);
 			int y = 1 + rand.nextInt(24);
-			int z = chunkZ * 16 +8 + rand.nextInt(16);
+			int z = chunkZ * 16 + rand.nextInt(16);
 			gen.generate(world, rand, new BlockPos(x, y+1, z));
 		}
 	}
