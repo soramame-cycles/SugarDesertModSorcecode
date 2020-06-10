@@ -1,10 +1,12 @@
 package com.sugar.sugardesertmod;
 
+import com.sugar.sugardesertmod.blocks.OreDictionaryHandler;
 import com.sugar.sugardesertmod.blocks.SugarDBlock;
 import com.sugar.sugardesertmod.gen.biome.ModBiome;
 import com.sugar.sugardesertmod.gen.block.BismuthOreGen;
 import com.sugar.sugardesertmod.gen.block.SugarBlockGen;
 import com.sugar.sugardesertmod.gen.block.SugarDiaOreGen;
+import com.sugar.sugardesertmod.items.SDItem;
 import com.sugar.sugardesertmod.recipes.SmeltingSugarD;
 import com.sugar.sugardesertmod.tab.CreativeTabsSugarD;
 import com.sugar.sugardesertmod.tools.SugarDTools;
@@ -34,7 +36,7 @@ import net.minecraftforge.registries.IForgeRegistry;
 public class SugarDesertMod {
 	public static final String MOD_ID = "sugard";
 	public static final String MOD_NAME = "SugerDesertmod";
-	public static final String MOD_VERSION = "1.4";
+	public static final String MOD_VERSION = "1.5";
 	public static CreativeTabsSugarD Tab_sugard = new CreativeTabsSugarD();
 
 	public static Item bismuth_crystal;
@@ -50,19 +52,19 @@ public class SugarDesertMod {
 	public void preinit(FMLPreInitializationEvent event) {
 
 		bismuth_crystal = new Item()
-				.setCreativeTab(SugarDesertMod.Tab_sugard)
+				.setCreativeTab(Tab_sugard)
 				.setUnlocalizedName("bismuth_crystal")
 				.setRegistryName("bismuth_crystal")
 				.setMaxStackSize(64);
 
 		bismuth_liquid = new Item()
-				.setCreativeTab(SugarDesertMod.Tab_sugard)
+				.setCreativeTab(Tab_sugard)
 				.setUnlocalizedName("bismuth_liquid")
 				.setRegistryName("bismuth_liquid")
 				.setMaxStackSize(64);
 
 		Sugar_diamond = new Item()
-				.setCreativeTab(SugarDesertMod.Tab_sugard)
+				.setCreativeTab(Tab_sugard)
 				.setUnlocalizedName("sugar_diamond")
 				.setRegistryName("sugar_diamond");
 
@@ -127,6 +129,7 @@ public class SugarDesertMod {
 		GameRegistry.registerWorldGenerator(new SugarDiaOreGen(),0);
 		ModBiome.registerBiomeTypes();
 		SmeltingSugarD.register();
+		OreDictionaryHandler.registerOreDictionary();
 	}
 
 	@SubscribeEvent
@@ -155,12 +158,22 @@ public class SugarDesertMod {
 		SugarDBlock.Sugar_leaves(event);
 		SugarDBlock.Sugar_sapling(event);
 		SugarDBlock.Sugar_stone_wall(event);
+		SugarDBlock.Sugar_trapdoor(event);
+		SugarDBlock.Sugar_bricks(event);
+		SugarDBlock.Sugar_pane(event);
+		SugarDBlock.Caramel_sauce(event);
+		SugarDBlock.Pudding_block(event);
+		SugarDBlock.Sugar_bricks_slab(event);
+		SugarDBlock.Sugar_bricks_stairs(event);
+		SugarDBlock.Sugar_cob_slab(event);
+		SugarDBlock.Sugar_cob_stairs(event);
 		SugarDTools.Bismuth_pickaxe(event);
 		SugarDTools.Sugar_diamond_axe(event);
 		SugarDTools.Sugar_diamond_hoe(event);
 		SugarDTools.Sugar_diamond_pickaxe(event);
 		SugarDTools.Sugar_diamond_shovel(event);
 		SugarDTools.Sugar_diamond_sword(event);
+		SDItem.Pudding(event);
 
 
 	}
@@ -192,12 +205,22 @@ public class SugarDesertMod {
 		SugarDBlock.Sugar_leavesModel(event);
 		SugarDBlock.Sugar_saplingModel(event);
 		SugarDBlock.Sugar_stone_wallModel(event);
+		SugarDBlock.Sugar_trapdoorModel(event);
+		SugarDBlock.Sugar_bricksModel(event);
+		SugarDBlock.Sugar_paneModel(event);
+		SugarDBlock.Caramel_sauceModel(event);
+		SugarDBlock.Pudding_blockModel(event);
+		SugarDBlock.Sugar_bricks_slabModel(event);
+		SugarDBlock.Sugar_bricks_stairsModel(event);
+		SugarDBlock.Sugar_cob_slabModel(event);
+		SugarDBlock.Sugar_cob_stairsModel(event);
 		SugarDTools.Bismuth_pickaxeModel(event);
 		SugarDTools.Sugar_diamond_axeModel(event);
 		SugarDTools.Sugar_diamond_hoeModel(event);
 		SugarDTools.Sugar_diamond_pickaxeModel(event);
 		SugarDTools.Sugar_diamond_shovelModel(event);
 		SugarDTools.Sugar_diamond_swordModel(event);
+		SDItem.PuddingModel(event);
 	}
 
 	@SubscribeEvent
