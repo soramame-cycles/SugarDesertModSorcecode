@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "half=bottom": { "model": "sugard:half_sugar_bricks_slab" },
+        "half=top": { "model": "sugard:upper_sugar_bricks_slab" }
+    }
+}
