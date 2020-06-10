@@ -19,7 +19,10 @@ public class Sugar_Desert extends Biome{
 		super(new BiomeProperties("sugar_desert")
 				.setTemperature(0.25F)
 				.setBaseHeight(0.05F)
-				.setHeightVariation(0.05F));
+				.setHeightVariation(0.05F)
+				.setRainfall(0.0F)
+				.setRainDisabled()
+				.setWaterColor(13434879));
 		this.setRegistryName("sugar_desert");
 		this.setSpawnables();
 		this.decorator.treesPerChunk = -999;
@@ -48,8 +51,7 @@ public class Sugar_Desert extends Biome{
 	}
 
 @Override
-	public float getSpawningChance()
-	{
+	public float getSpawningChance() {
 		return 0.15F;
 	}
 
