@@ -1,0 +1,6 @@
+{
+    "parent": "block/pane_noside",
+    "textures": {
+        "pane": "sugard:blocks/sugar_candy"
+    }
+}
