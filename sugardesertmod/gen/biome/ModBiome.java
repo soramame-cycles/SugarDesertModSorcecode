@@ -13,10 +13,12 @@ public class ModBiome {
 
 	public static Biome Suger_Desert = new Sugar_Desert();
 	public static Biome PuddingPlain = new Pudding_Plain();
+	public static Biome Sugar_Forest = new Sugar_Forest();
 
 	public static void registerBiomes(IForgeRegistry<Biome> registry) {
 		registry.register(Suger_Desert);
 		registry.register(PuddingPlain);
+		registry.register(Sugar_Forest);
 	}
 
 	public static void registerBiomeTypes() {
@@ -33,5 +35,12 @@ public class ModBiome {
 		BiomeManager.addStrongholdBiome(PuddingPlain);
 		BiomeDictionary.addTypes(PuddingPlain, Type.PLAINS);
 		ForgeRegistries.BIOMES.register(PuddingPlain);
+
+		//Sugar_Forst
+		BiomeManager.addBiome(BiomeType.COOL, new BiomeEntry(Sugar_Forest,10));
+		BiomeManager.addSpawnBiome(Sugar_Forest);
+		BiomeManager.addStrongholdBiome(Sugar_Forest);
+		BiomeDictionary.addTypes(Sugar_Forest, Type.FOREST);
+		ForgeRegistries.BIOMES.register(Sugar_Forest);
 	}
 }
