@@ -22,8 +22,8 @@ public class BlockBismuthCrystalBlock extends Block {
 	public BlockBismuthCrystalBlock(Material materialIn) {
 		super(materialIn);
 	}
-@Override
-	public boolean isBeaconBase(IBlockAccess worldObj, BlockPos pos, BlockPos beacon)
-    {
-        return true;}
+	@Override
+	public boolean isBeaconBase(IBlockAccess worldObj, BlockPos pos, BlockPos beacon) {
+	return true;
+	}
 }

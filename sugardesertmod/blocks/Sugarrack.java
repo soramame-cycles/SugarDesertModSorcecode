@@ -8,6 +8,7 @@ import net.minecraft.block.BlockOre;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.item.Item;
+import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
@@ -54,10 +55,16 @@ public class Sugarrack extends BlockOre {
             return this.quantityDropped(random);
         }
     }
+
 	@Override
 	public int getExpDrop(IBlockState state,
 			net.minecraft.world.IBlockAccess world, BlockPos pos, int fortune) {
 		Random rand = world instanceof World ? ((World)world).rand : new Random();
 		return MathHelper.getInt(rand,3,7);
+	}
+
+	@Override
+	public boolean isFireSource(World world, BlockPos pos, EnumFacing side) {
+		return true;
 	}
 }

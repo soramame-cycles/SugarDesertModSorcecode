@@ -32,7 +32,7 @@ public class SugarDiamondOre extends Block {
 
 	@Override
 	public Item getItemDropped(IBlockState state, Random rand, int fortune) {
-		return SugarDesertMod.Sugar_diamond;
+		return SugarDesertMod.Sugar_diamond_nugget;
 	}
 	@Override
 	public int quantityDropped(Random random) {

@@ -23,10 +23,10 @@ public class SugarDiamondBlock extends Block {
 
 	public SugarDiamondBlock(Material materialIn) {
 		super(materialIn);
-		// TODO 自動生成されたコンストラクター・スタブ
+
 	}
 	@Override
 	public boolean isBeaconBase(IBlockAccess worldObj, BlockPos pos, BlockPos beacon){
-        return true;
-        }
+		return true;
+	}
 }

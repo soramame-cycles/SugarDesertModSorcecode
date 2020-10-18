@@ -4,11 +4,13 @@ import java.util.Random;
 
 import com.sugar.sugardesertmod.SugarDesertMod;
 import com.sugar.sugardesertmod.gen.feature.WorldGenSugarTree;
+import com.sugar.sugardesertmod.init.SugarDBlock;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockBush;
 import net.minecraft.block.IGrowable;
 import net.minecraft.block.SoundType;
+import net.minecraft.block.state.BlockFaceShape;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.EnumFacing;
@@ -78,4 +80,10 @@ public class SugarSapling extends BlockBush implements IGrowable {
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
         return SAPLING_AABB;
     }
+
+    @Override
+    public BlockFaceShape getBlockFaceShape(IBlockAccess worldIn, IBlockState state, BlockPos pos, EnumFacing face) {
+    	return BlockFaceShape.CENTER;
+    }
+
 }

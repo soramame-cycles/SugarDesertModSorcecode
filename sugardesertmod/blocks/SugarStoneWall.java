@@ -1,6 +1,7 @@
 package com.sugar.sugardesertmod.blocks;
 
 import com.sugar.sugardesertmod.SugarDesertMod;
+import com.sugar.sugardesertmod.init.SugarDBlock;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockWall;
