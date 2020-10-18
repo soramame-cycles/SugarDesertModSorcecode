@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_top",
+    "textures": {
+        "bottom": "sugard:blocks/door_sugar_lower",
+        "top": "sugard:blocks/door_sugar_upper"
+    }
+}

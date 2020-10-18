@@ -1,5 +1,5 @@
 {
-    "parent": "block/torch",
+    "parent": "block/torch_wall",
     "textures": {
         "torch": "sugard:blocks/sugar_torch"
     }
