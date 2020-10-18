@@ -1,12 +1,14 @@
 package com.sugar.sugardesertmod;
 
-import com.sugar.sugardesertmod.blocks.OreDictionaryHandler;
-import com.sugar.sugardesertmod.blocks.SugarDBlock;
 import com.sugar.sugardesertmod.gen.biome.ModBiome;
 import com.sugar.sugardesertmod.gen.block.BismuthOreGen;
+import com.sugar.sugardesertmod.gen.block.EndDiaGen;
+import com.sugar.sugardesertmod.gen.block.NetherDiaGen;
 import com.sugar.sugardesertmod.gen.block.SugarBlockGen;
 import com.sugar.sugardesertmod.gen.block.SugarDiaOreGen;
+import com.sugar.sugardesertmod.init.SugarDBlock;
 import com.sugar.sugardesertmod.items.SDItem;
+import com.sugar.sugardesertmod.linkmod.OreDictionaryHandler;
 import com.sugar.sugardesertmod.recipes.SmeltingSugarD;
 import com.sugar.sugardesertmod.tab.CreativeTabsSugarD;
 import com.sugar.sugardesertmod.tools.SugarDTools;
@@ -36,7 +38,7 @@ import net.minecraftforge.registries.IForgeRegistry;
 public class SugarDesertMod {
 	public static final String MOD_ID = "sugard";
 	public static final String MOD_NAME = "SugerDesertmod";
-	public static final String MOD_VERSION = "1.5";
+	public static final String MOD_VERSION = "1.6";
 	public static CreativeTabsSugarD Tab_sugard = new CreativeTabsSugarD();
 
 	public static Item bismuth_crystal;
@@ -127,6 +129,8 @@ public class SugarDesertMod {
 		GameRegistry.registerWorldGenerator(new BismuthOreGen(), 0);
 		GameRegistry.registerWorldGenerator(new SugarBlockGen(), 0);
 		GameRegistry.registerWorldGenerator(new SugarDiaOreGen(),0);
+		GameRegistry.registerWorldGenerator(new NetherDiaGen(), 0);
+		GameRegistry.registerWorldGenerator(new EndDiaGen(), 0);
 		ModBiome.registerBiomeTypes();
 		SmeltingSugarD.register();
 		OreDictionaryHandler.registerOreDictionary();
@@ -167,6 +171,8 @@ public class SugarDesertMod {
 		SugarDBlock.Sugar_bricks_stairs(event);
 		SugarDBlock.Sugar_cob_slab(event);
 		SugarDBlock.Sugar_cob_stairs(event);
+		SugarDBlock.Sugar_planks_button(event);
+		SugarDBlock.Sugar_stone_button(event);
 		SugarDTools.Bismuth_pickaxe(event);
 		SugarDTools.Sugar_diamond_axe(event);
 		SugarDTools.Sugar_diamond_hoe(event);
@@ -214,6 +220,8 @@ public class SugarDesertMod {
 		SugarDBlock.Sugar_bricks_stairsModel(event);
 		SugarDBlock.Sugar_cob_slabModel(event);
 		SugarDBlock.Sugar_cob_stairsModel(event);
+		SugarDBlock.Sugar_planks_buttonModel(event);
+		SugarDBlock.Sugar_stone_buttonModel(event);
 		SugarDTools.Bismuth_pickaxeModel(event);
 		SugarDTools.Sugar_diamond_axeModel(event);
 		SugarDTools.Sugar_diamond_hoeModel(event);
