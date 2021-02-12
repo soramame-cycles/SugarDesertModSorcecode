@@ -22,18 +22,17 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 @SuppressWarnings("deprecation")
 @Interface(iface = "net.blacklab.lmr.api.item.IItemSpecialSugar", modid = "lmreengaged")
-public class PUDDING extends ItemFood implements IItemSpecialSugar{
+public class AZUKI_PASTE extends ItemFood implements IItemSpecialSugar{
 
-	public PUDDING() {
-		super(6,1,true);
-		this.setRegistryName("pudding");
-		this.setUnlocalizedName("pudding");
+	public AZUKI_PASTE() {
+		super(4, 0.3F, true);
 		this.setCreativeTab(SugarDesertMod.Tab_sugard);
+		this.setUnlocalizedName("azuki_paste");
+		this.setRegistryName("azuki_paste");
 	}
 
-	public PUDDING(int amount, float saturation, boolean isWolfFood) {
+	public AZUKI_PASTE(int amount, float saturation, boolean isWolfFood) {
 		super(amount, saturation, isWolfFood);
-
 	}
 
 	@Override
@@ -49,7 +48,7 @@ public class PUDDING extends ItemFood implements IItemSpecialSugar{
 
 	@Override
 	public boolean onSugarEaten(EntityLittleMaid maid, EnumConsumeSugar purpose, ItemStack stack) {
-		maid.heal(1.0F);
+		maid.heal(1.5F);
 		return true;
 	}
 

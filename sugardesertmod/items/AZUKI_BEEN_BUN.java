@@ -11,8 +11,10 @@ import net.blacklab.lmr.entity.littlemaid.EntityLittleMaid;
 import net.blacklab.lmr.entity.littlemaid.EntityLittleMaid.EnumConsumeSugar;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.MobEffects;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
+import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.text.translation.I18n;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.Loader;
@@ -22,18 +24,18 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 @SuppressWarnings("deprecation")
 @Interface(iface = "net.blacklab.lmr.api.item.IItemSpecialSugar", modid = "lmreengaged")
-public class PUDDING extends ItemFood implements IItemSpecialSugar{
+public class AZUKI_BEEN_BUN extends ItemFood implements IItemSpecialSugar{
 
-	public PUDDING() {
-		super(6,1,true);
-		this.setRegistryName("pudding");
-		this.setUnlocalizedName("pudding");
+	public AZUKI_BEEN_BUN() {
+		super(8,0.6F,true);
 		this.setCreativeTab(SugarDesertMod.Tab_sugard);
+		this.setUnlocalizedName("azuki_been_bun");
+		this.setRegistryName("azuki_been_bun");
+		this.setPotionEffect(new PotionEffect(MobEffects.HASTE, 1000, 0), 1.0F);
 	}
 
-	public PUDDING(int amount, float saturation, boolean isWolfFood) {
+	public AZUKI_BEEN_BUN(int amount, float saturation, boolean isWolfFood) {
 		super(amount, saturation, isWolfFood);
-
 	}
 
 	@Override
@@ -49,7 +51,8 @@ public class PUDDING extends ItemFood implements IItemSpecialSugar{
 
 	@Override
 	public boolean onSugarEaten(EntityLittleMaid maid, EnumConsumeSugar purpose, ItemStack stack) {
-		maid.heal(1.0F);
+		maid.heal(2.0F);
+		maid.addPotionEffect(new PotionEffect(MobEffects.STRENGTH,1200,0));
 		return true;
 	}
 
