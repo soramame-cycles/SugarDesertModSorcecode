@@ -15,6 +15,8 @@ item.azuki_paste.name=azuki_paste
 item.azuki_been_bun.name=azuki_been_bun
 item.poppy_seed.name=poppy_seed
 item.pudding.name=pudding
+item.crushed_sugar_cane.name=Crushed_sugar_name
+item.raw_sugar.name=Raw_sugar
 
 tile.bismuth_ore.name=bismuth_ore
 tile.bismuth_crystal_block.name=bismuth_crystal_block
@@ -48,6 +50,14 @@ tile.sugar_bricks_slab.name=sugar_bricks_slab
 tile.sugar_bricks_stairs.name=sugar_bricks_stairs
 tile.sugar_cob_slab.name=sugar_cob_slab
 tile.sugar_cob_stairs.name=sugar_cob_stairs
+tile.sugar_planks_button.name=sugar_planks_button
+tile.sugar_stone_button.name=sugar_stone_button
+tile.cookie_block.name=Cookie_block
+tile.raw_sugar_block.name=Raw_sugar_block
+tile.moist_sugar_block.name=Moist_sugar_block
+
+tooltip.can_eat_wolf=You can eat it with the wolf!
+tooltip.can_eat_wolf_and_maid=You can eat it with a maid and a wolf!
 
 advancements.sugard.root.title=SugarDesertMod
 advancements.sugard.root.description=Install sugarD
@@ -59,5 +69,14 @@ advancements.sugard.rotten_flesh.title=this is rotten
 advancements.sugard.rotten_flesh.description=get rotten_flesh_block
 advancements.sugard.get_azuki_been_bun.title=energy100times!
 advancements.sugard.get_azuki_been_bun.description=get azuki_been_bun
+
+sugard.config.generate_ore=Generate Ores
+sugard.config.sugar_diamond_gen=Sugar_Diamond Gen
+sugard.config.sugarrack_gen=Sugarrack Gen
+sugard.config.end_sugar_stone_gen=End_Sugar_Stone Gen
+sugard.config.bismuth_gen=Bismuth Gen
+sugard.config.sugar_block_gen=Sugar_Block Gen
+sugard.config.add_recipe=Add Recipe
+sugard.config.bismuth_smelting=Bismuth Smelting
 
 itemGroup.SugarD_tabs=SugarD

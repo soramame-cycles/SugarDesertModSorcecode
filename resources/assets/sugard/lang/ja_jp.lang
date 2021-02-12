@@ -15,6 +15,8 @@ item.azuki_paste.name=あんこ
 item.azuki_been_bun.name=アンパン
 item.poppy_seed.name=ポピーシード
 item.pudding.name=プリン
+item.crushed_sugar_cane.name=砕いたサトウキビ
+item.raw_sugar.name=黒砂糖
 
 tile.bismuth_ore.name=ビスマス鉱石
 tile.bismuth_crystal_block.name=ビスマス骸晶ブロック
@@ -48,6 +50,14 @@ tile.sugar_bricks_slab.name=砂糖レンガのハーフ
 tile.sugar_bricks_stairs.name=砂糖レンガの階段
 tile.sugar_cob_slab.name=砂糖丸石のハーフ
 tile.sugar_cob_stairs.name=砂糖丸石の階段
+tile.sugar_planks_button.name=砂糖木のボタン
+tile.sugar_stone_button.name=砂糖石のボタン
+tile.cookie_block.name=クッキーブロック
+tile.raw_sugar_block.name=黒砂糖ブロック
+tile.moist_sugar_block.name=湿気った"砂"糖
+
+tooltip.can_eat_wolf=オオカミと一緒に食べられます！
+tooltip.can_eat_wolf_and_maid=メイドさんとオオカミと一緒に食べられます！
 
 advancements.sugard.root.title=SugarDesertMod
 advancements.sugard.root.description=sugarDをインストールする
@@ -59,5 +69,14 @@ advancements.sugard.rotten_flesh.title=それ、腐ってね？
 advancements.sugard.rotten_flesh.description=腐肉ブロックを手に入れる
 advancements.sugard.get_azuki_been_bun.title=元気100倍!アンp…おっと誰か来たようだ…
 advancements.sugard.get_azuki_been_bun.description=あんパンを手に入れる
+
+sugard.config.generate_ore=鉱石生成の設定
+sugard.config.sugar_diamond_gen=砂糖ダイヤの生成
+sugard.config.sugarrack_gen=シュガーラックの生成
+sugard.config.end_sugar_stone_gen=エンド砂糖石の生成
+sugard.config.bismuth_gen=ビスマスの生成
+sugard.config.sugar_block_gen="砂"糖の生成
+sugard.config.add_recipe=レシピ追加
+sugard.config.bismuth_smelting=ビスマスの精錬レシピ
 
 itemGroup.SugarD_tabs=SugarD
