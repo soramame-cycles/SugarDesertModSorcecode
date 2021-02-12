@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Random;
 
 import com.sugar.sugardesertmod.SugarDesertMod;
-import com.sugar.sugardesertmod.init.SugarDBlock;
+import com.sugar.sugardesertmod.init.block.SugarDBlock;
 
 import net.minecraft.block.BlockLeaves;
 import net.minecraft.block.BlockPlanks.EnumType;

@@ -1,7 +1,7 @@
 package com.sugar.sugardesertmod.blocks;
 
 import com.sugar.sugardesertmod.SugarDesertMod;
-import com.sugar.sugardesertmod.init.SugarDBlock;
+import com.sugar.sugardesertmod.init.block.SugarDBlock;
 
 import net.minecraft.block.BlockStairs;
 import net.minecraft.block.state.IBlockState;

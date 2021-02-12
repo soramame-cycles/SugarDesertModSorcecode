@@ -3,6 +3,7 @@ package com.sugar.sugardesertmod.blocks;
 import java.util.Random;
 
 import com.sugar.sugardesertmod.SugarDesertMod;
+import com.sugar.sugardesertmod.init.item.SDItem;
 
 import net.minecraft.block.BlockOre;
 import net.minecraft.block.SoundType;
@@ -29,7 +30,7 @@ public class EndSugarStone extends BlockOre {
 
 	@Override
 	public Item getItemDropped(IBlockState state, Random rand, int fortune) {
-		return SugarDesertMod.Sugar_diamond_nugget;
+		return SDItem.Sugar_diamond_nugget;
 	}
 
 	@Override
