@@ -4,6 +4,7 @@ import java.util.Random;
 
 import com.sugar.sugardesertmod.gen.feature.WorldGenSugarTree;
 
+import net.minecraft.entity.passive.EntityWolf;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 
@@ -19,8 +20,13 @@ public class Sugar_Forest extends Biome {
 				.setRainfall(0.8F)
 				.setSnowEnabled());
 		this.setRegistryName("sugar_forest");
+		this.setSpawnables();
 		this.getEnableSnow();
 		this.decorator.treesPerChunk = 10;
+	}
+
+	private void setSpawnables() {
+		spawnableCreatureList.add(new Biome.SpawnListEntry(EntityWolf.class, 5, 4, 4));
 	}
 
 	@Override

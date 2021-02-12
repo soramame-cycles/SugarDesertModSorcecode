@@ -3,7 +3,7 @@ package com.sugar.sugardesertmod.gen.biome;
 import java.util.Random;
 
 import com.sugar.sugardesertmod.gen.feature.WorldGenSugarTree;
-import com.sugar.sugardesertmod.init.SugarDBlock;
+import com.sugar.sugardesertmod.init.block.SugarDBlock;
 
 import net.minecraft.entity.monster.EntitySkeleton;
 import net.minecraft.entity.passive.EntityChicken;

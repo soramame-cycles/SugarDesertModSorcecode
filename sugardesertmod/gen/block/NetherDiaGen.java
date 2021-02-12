@@ -2,9 +2,10 @@ package com.sugar.sugardesertmod.gen.block;
 
 import java.util.Random;
 
-import com.sugar.sugardesertmod.blocks.SugarDBlock;
+import com.sugar.sugardesertmod.config.SugarD_Config;
+import com.sugar.sugardesertmod.init.block.SugarDBlock;
 
-import net.minecraft.block.Block;
+import net.minecraft.block.state.pattern.BlockMatcher;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -19,19 +20,20 @@ public class NetherDiaGen implements IWorldGenerator{
 	private WorldGenerator nsr;
 
 	public NetherDiaGen() {
-		nsr = new WorldGenMinable(SugarDBlock.Sugarrack.getDefaultState(),8);
+		nsr = new WorldGenMinable(SugarDBlock.Sugarrack.getDefaultState(),8,BlockMatcher.forBlock(Blocks.NETHERRACK));
 	}
 
 	@Override
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator,
 			IChunkProvider chunkProvider) {
-
 		if(world.provider.getDimension() == -1) {
-			runGenerator(nsr,world, random, chunkX, chunkZ,20,Blocks.NETHERRACK);
+			if(SugarD_Config.generate.genSugarrack == true) {
+				runGenerator(nsr,world, random, chunkX, chunkZ,20);
+			}
 		}
 	}
 
-	private void runGenerator(WorldGenerator gen,World world, Random rand,int chunkX,int chunkZ,int chance,Block taget) {
+	private void runGenerator(WorldGenerator gen,World world, Random rand,int chunkX,int chunkZ,int chance) {
 
 	for (int i = 0; i < 10; i++) {
 		int x = chunkX * 16 + rand.nextInt(16);

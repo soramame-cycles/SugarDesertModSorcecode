@@ -2,7 +2,7 @@ package com.sugar.sugardesertmod.gen.biome;
 
 import java.util.Random;
 
-import com.sugar.sugardesertmod.init.SugarDBlock;
+import com.sugar.sugardesertmod.init.block.SugarDBlock;
 
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.monster.EntitySlime;

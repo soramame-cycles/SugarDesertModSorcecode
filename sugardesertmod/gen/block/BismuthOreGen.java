@@ -2,9 +2,10 @@ package com.sugar.sugardesertmod.gen.block;
 
 import java.util.Random;
 
-import com.sugar.sugardesertmod.blocks.SugarDBlock;
+import com.sugar.sugardesertmod.config.SugarD_Config;
+import com.sugar.sugardesertmod.init.block.SugarDBlock;
 
-import net.minecraft.block.Block;
+import net.minecraft.block.state.pattern.BlockMatcher;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -19,7 +20,7 @@ public class BismuthOreGen implements IWorldGenerator {
 	private WorldGenerator bismuth_ore;
 
 	public BismuthOreGen() {
-		bismuth_ore = new WorldGenMinable(SugarDBlock.Bismuth_Ore.getDefaultState(),9);
+		bismuth_ore = new WorldGenMinable(SugarDBlock.Bismuth_Ore.getDefaultState(),9,BlockMatcher.forBlock(Blocks.STONE));
 
 	}
 
@@ -29,7 +30,9 @@ public class BismuthOreGen implements IWorldGenerator {
 		switch(world.provider.getDimension()) {
 
 		case 0: //overworld
-			runGenerator(bismuth_ore,world, random, chunkX, chunkZ,40,Blocks.STONE);
+			if(SugarD_Config.generate.genBismuth == true) {
+			runGenerator(bismuth_ore,world, random, chunkX, chunkZ,20);
+			}
 			break;
 
 		case 1: //end
@@ -42,7 +45,7 @@ public class BismuthOreGen implements IWorldGenerator {
 		}
 	}
 
-	private void runGenerator(WorldGenerator gen,World world, Random rand,int chunkX,int chunkZ,int chance,Block taget) {;
+	private void runGenerator(WorldGenerator gen,World world, Random rand,int chunkX,int chunkZ,int chance) {
 	//ランジェネレータの構文のいい加減な覚え方
 	//(生成マン,世界に,ランダムに,チャンクのX軸,チャンクのZ軸,生成チャンス,どのブロックと置き換えるか)
 

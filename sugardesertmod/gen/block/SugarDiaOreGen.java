@@ -2,9 +2,10 @@ package com.sugar.sugardesertmod.gen.block;
 
 import java.util.Random;
 
-import com.sugar.sugardesertmod.blocks.SugarDBlock;
+import com.sugar.sugardesertmod.config.SugarD_Config;
+import com.sugar.sugardesertmod.init.block.SugarDBlock;
 
-import net.minecraft.block.Block;
+import net.minecraft.block.state.pattern.BlockMatcher;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -19,7 +20,7 @@ public class SugarDiaOreGen implements IWorldGenerator{
 	private WorldGenerator sugar_diamond_ore;
 
 	public SugarDiaOreGen() {
-		sugar_diamond_ore = new WorldGenMinable(SugarDBlock.Sugar_diamond_ore.getDefaultState(),9);
+		sugar_diamond_ore = new WorldGenMinable(SugarDBlock.Sugar_diamond_ore.getDefaultState(),9,BlockMatcher.forBlock(Blocks.STONE));
 	}
 
 	@Override
@@ -28,7 +29,9 @@ public class SugarDiaOreGen implements IWorldGenerator{
 		switch(world.provider.getDimension()) {
 
 		case 0: //overworld
-			runGenerator(sugar_diamond_ore,world, random, chunkX, chunkZ,20,Blocks.STONE);
+			if(SugarD_Config.generate.genSugardiamond == true) {
+				runGenerator(sugar_diamond_ore,world, random, chunkX, chunkZ,10);
+			}
 			break;
 
 		case 1: //end
@@ -40,7 +43,7 @@ public class SugarDiaOreGen implements IWorldGenerator{
 		}
 	}
 
-	private void runGenerator(WorldGenerator gen,World world, Random rand,int chunkX,int chunkZ,int chance,Block taget) {;
+	private void runGenerator(WorldGenerator gen,World world, Random rand,int chunkX,int chunkZ,int chance) {;
 
 		for (int i = 0; i < 10; i++) {
 			int x = chunkX * 16 + rand.nextInt(16);

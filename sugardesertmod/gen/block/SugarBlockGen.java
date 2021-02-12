@@ -2,7 +2,8 @@ package com.sugar.sugardesertmod.gen.block;
 
 import java.util.Random;
 
-import com.sugar.sugardesertmod.blocks.SugarDBlock;
+import com.sugar.sugardesertmod.config.SugarD_Config;
+import com.sugar.sugardesertmod.init.block.SugarDBlock;
 
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
@@ -28,7 +29,9 @@ public class SugarBlockGen implements IWorldGenerator {
 		switch(world.provider.getDimension()) {
 
 		case 0://overworld
-			runGenerator(sugar_block,world,random,chunkX,chunkZ,20,Blocks.DIRT);
+			if(SugarD_Config.generate.genSugarblock == true) {
+				runGenerator(sugar_block,world,random,chunkX,chunkZ,20,Blocks.DIRT);
+			}
 			break;
 
 		case 1://end
