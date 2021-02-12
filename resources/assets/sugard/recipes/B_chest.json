@@ -1,0 +1,19 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "###",
+    "# #",
+    "###"
+  ],
+  "key": {
+    "#": [
+      {
+        "item": "sugard:sugar_planks",
+        "data": 0
+      }
+    ]
+  },
+  "result": {
+    "item": "minecraft:chest"
+  }
+}
