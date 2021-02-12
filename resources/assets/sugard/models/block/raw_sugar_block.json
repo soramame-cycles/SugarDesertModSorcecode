@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "sugard:blocks/raw_sugar_block"
+  }
+}
